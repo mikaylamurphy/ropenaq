@@ -308,6 +308,7 @@ functionParameters <- function(resTable) {
 
 # dates abbreviation
 func_date_headers <- function(date){
+  print(date)
   date <- strsplit(date, ",")[[1]][2]
   date <- gsub("Jan", "01", date)
   date <- gsub("Feb", "02", date)
